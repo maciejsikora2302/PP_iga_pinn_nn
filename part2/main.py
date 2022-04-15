@@ -1,11 +1,10 @@
 from collections import defaultdict
 from pprint import pprint as pp
-from tabnanny import verbose
 from sklearn.model_selection import train_test_split
 import numpy as np
 import tensorflow as tf
 
-LEARNING_RATE = 0.09
+LEARNING_RATE = 0.15
 DATASET_SIZE = None
 EPOCHS = 100
 
@@ -15,8 +14,6 @@ class Dataset():
         if y is None: y = []
         self.x = np.array(x).reshape(-1,1)
         self.y = np.array(y).reshape(-1,1)
-        print(self.x)
-        print(self.y)
 
     def split_datasets(self, test_size = 0.2):
         self.x_train, self.x_test, self.y_train, self.y_test = train_test_split(self.x, self.y, test_size = test_size)
