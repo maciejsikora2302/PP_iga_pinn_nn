@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 import tensorflow as tf
 
-LEARNING_RATE = 0.02
+LEARNING_RATE = 0.09
 DATASET_SIZE = None
 EPOCHS = 100
 
