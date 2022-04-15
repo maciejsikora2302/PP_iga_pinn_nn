@@ -6,7 +6,7 @@ import tensorflow as tf
 
 LEARNING_RATE = 0.15
 DATASET_SIZE = None
-EPOCHS = 100
+EPOCHS = 150
 
 class Dataset():
     def __init__(self, x=None, y=None):
@@ -22,7 +22,7 @@ class Dataset():
 
 data = defaultdict(lambda: [])
 
-with open('./dataset40k.txt', 'r') as f:
+with open('./dataset400k.txt', 'r') as f:
     labels = f.readline().split(',')
     values = f.readline().split(',')
     labels = list(map(lambda x: x.split('_')[0], labels))
