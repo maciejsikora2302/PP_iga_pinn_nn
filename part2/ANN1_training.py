@@ -78,7 +78,7 @@ if save:
     timestamp = datetime.now()
     timestamp = timestamp.strftime("%d-%m-%Y--%H-%M-%S-%f")
 
-    dir_path = f"./saved_models/{timestamp}"
+    dir_path = f"./ANN1/{timestamp}"
 
     os.mkdir(dir_path)
 
