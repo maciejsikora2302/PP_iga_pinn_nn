@@ -27,8 +27,8 @@ activation_function = 'tanh'
 
 
 model = tf.keras.Sequential([
-        tf.keras.layers.Dense(5, input_dim=1, activation=activation_function),
-        tf.keras.layers.Dense(3, activation=activation_function),
+        tf.keras.layers.Dense(10, input_dim=1, activation=activation_function),
+        tf.keras.layers.Dense(5, activation=activation_function),
         tf.keras.layers.Dense(1, activation=activation_function)
     ])
 
